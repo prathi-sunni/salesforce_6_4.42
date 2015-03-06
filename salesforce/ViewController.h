@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <SalesforceSDKCore/SalesforceSDKManager.h>
+
 
 @interface ViewController : UIViewController
+
+@property (nonatomic, strong) IBOutlet UILabel *appLabel;
 
 
 @end
