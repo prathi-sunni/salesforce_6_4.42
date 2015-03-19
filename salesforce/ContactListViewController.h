@@ -13,6 +13,7 @@
 #import <SalesforceSDKCore/SFUserAccountManager.h>
 #import <SalesforceSDKCore/SFAuthenticationManager.h>
 #import "ContactDetailViewController.h"
+#import "TableViewCell.h"
 
 @interface ContactListViewController : UIViewController<SFAuthenticationManagerDelegate,SFRestDelegate,UIWebViewDelegate,UITableViewDataSource,UITableViewDelegate>
 {
@@ -25,10 +26,18 @@
     
     NSString *Backurl;
     
-    NSArray *Temp;
+  
    
     
 }
+
+//@property(nonatomic,weak)TableViewCell *tablecell;
+
+@property(nonatomic,strong) NSMutableArray *Temp;
+@property (weak, nonatomic) IBOutlet UILabel *tableviewcelllabel;
+@property (weak, nonatomic) IBOutlet UIImageView *tableviewcellimage;
+@property (weak, nonatomic) IBOutlet TableViewCell *tableviewcell;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityindicator;
 @property (weak, nonatomic) IBOutlet UITableView *_tableview;
 - (IBAction)Back:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *_Back;
