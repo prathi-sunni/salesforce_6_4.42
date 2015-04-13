@@ -13,6 +13,8 @@
 #import <SalesforceSDKCore/SFAuthenticationManager.h>
 #import <SalesforceRestAPI/SFRestAPI+Blocks.h>
 #import "ContactDetailViewController.h"
+#import "cellvalue.h"
+
 
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 @interface ContactListViewController ()
@@ -29,20 +31,103 @@ static NSString * const kOAuthRedirectURI = @"https://buddy.ap1.visual.force.com
 
 @implementation ContactListViewController
 
+<<<<<<< HEAD
 @synthesize Icons;
+=======
+@synthesize Temp;
+>>>>>>> origin/master
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationController.navigationBar.hidden = TRUE;
     
+    
+    [self._tableview registerNib:[UINib nibWithNibName:@"Tableviewcell"
+                                               bundle:[NSBundle mainBundle]]
+         forCellReuseIdentifier:@"identifier"];
+    self._tableview.estimatedRowHeight = 100.0;
+    self._tableview.rowHeight = UITableViewAutomaticDimension;
+    
     DueDate = [NSMutableArray array];
     Subject = [NSMutableArray array];
     Priority = [NSMutableArray array];
     Status = [NSMutableArray array];
+<<<<<<< HEAD
     
     Icons = [NSArray arrayWithObjects:@"dashboard.png",@"contact.png",@"event.png",@"task.png",@"feed.png",@"Lightning.png",@"opportunity.png",@"",@"",@"",@"",@"",@"",@"", nil];
     Temp = [NSArray arrayWithObjects:@"DashBoard",@"Contact",@"Event",@"Task",@"Feed",@"Lightning",@"Opportunity",@"Accounts",@"People",@"Settings",@"Help",@"LogOut", nil];
+=======
+    Temp = [NSMutableArray array];
+    
+    cellvalue *value1 = [[cellvalue alloc]init];
+    value1.name = @"SalesForce";
+    value1.imagename = @"salesforce.png";
+    [Temp addObject:value1];
+    
+    cellvalue *value2 = [[cellvalue alloc]init];
+    value2.name = @"Note";
+    value2.imagename = @"notes.png";
+    [Temp addObject:value2];
+    
+    cellvalue *value3 = [[cellvalue alloc]init];
+    value3.name = @"Events";
+    value3.imagename = @"event.png";
+    [Temp addObject:value3];
+    
+    cellvalue *value4 = [[cellvalue alloc]init];
+    value4.name = @"Task";
+    value4.imagename = @"Task.png";
+    [Temp addObject:value4];
+    
+    cellvalue *value5 = [[cellvalue alloc]init];
+    value5.name = @"Opportunity";
+    value5.imagename = @"opportunity.png";
+    [Temp addObject:value5];
+    
+    cellvalue *value6 = [[cellvalue alloc]init];
+    value6.name = @"Profile";
+    value6.imagename = @"profile.png";
+    [Temp addObject:value6];
+    
+    cellvalue *value7 = [[cellvalue alloc]init];
+    value7.name = @"Financials";
+    value7.imagename = @"Finacials.png";
+    [Temp addObject:value7];
+    
+    cellvalue *value8 = [[cellvalue alloc]init];
+    value8.name = @"Planning";
+    value8.imagename = @"planning.png";
+    [Temp addObject:value8];
+    
+    cellvalue *value9 = [[cellvalue alloc]init];
+    value9.name = @"Operational Detail";
+    value9.imagename = @"operations-details.png";
+    [Temp addObject:value9];
+    
+    cellvalue *value10 = [[cellvalue alloc]init];
+    value10.name = @"Status";
+    value10.imagename = @"Status.png";
+    [Temp addObject:value10];
+    
+    cellvalue *value11 = [[cellvalue alloc]init];
+    value11.name = @"Recent Activity";
+    value11.imagename = @"recentactivity.png";
+    [Temp addObject:value11];
+    
+    cellvalue *value12 = [[cellvalue alloc]init];
+    value12.name = @"Service Oppurtunities";
+    value12.imagename = @"service_oppurtunities.png";
+    [Temp addObject:value12];
+    
+    cellvalue *value13 = [[cellvalue alloc]init];
+    value13.name = @"Solution Oppurtunities";
+    value13.imagename = @"solution_oppurtunity.png";
+    [Temp addObject:value13];
+    
+    
+//    Temp = [NSArray arrayWithObjects:@"SalesForce",@"Note",@"Event",@"Task",@"Oppurtunity",@"Profile",@"Financials",@"Planning",@"Operational Detail",@"Status",@"Recent Activity",@"Service Oppurtunities",@"Solution Oppurtunities", nil];
+>>>>>>> origin/master
     
     [_Account setTitle:@"Please Wait..." forState:UIControlStateNormal];
     
@@ -50,17 +135,48 @@ static NSString * const kOAuthRedirectURI = @"https://buddy.ap1.visual.force.com
     
 //         [self CallWebservice:[SalesForceBussinessClass URLGeneration:@"https://ap1.salesforce.com/console?tsid=02u90000001N9gf"]];
     
+<<<<<<< HEAD
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:5 inSection:0];
     [__tableview selectRowAtIndexPath:indexPath
                                 animated:YES
                           scrollPosition:UITableViewScrollPositionNone];
     [self tableView:__tableview didSelectRowAtIndexPath:indexPath];
+=======
+    [[SFAuthenticationManager sharedManager] addDelegate:self];
+    
+    [[SFAuthenticationManager sharedManager]
+     loginWithCompletion:(SFOAuthFlowSuccessCallbackBlock)^(SFOAuthInfo *info) {
+         
+         NSLog(@"Authentication Done");
+         
+         [self CallWebservice:[self URLGeneration:@"https://ap1.salesforce.com/console?tsid=02u90000001N9gf"]];
+         
+         [self ByPassingLogin];
+//         [self FetchtheAccountsDetails];
+         
+         
+        
+         
+     }
+     failure:(SFOAuthFlowFailureCallbackBlock)^(SFOAuthInfo *info, NSError *error) {
+         NSLog(@"Authentication Failed");
+         // handle error hare.
+     }
+     ];
+>>>>>>> origin/master
     
  
    
 }
 
+- (void)authManager:(SFAuthenticationManager *)manager willDisplayAuthWebView:(UIWebView *)view{
+    
+    NSString *str = [view description];
+    
+}
 
+- (void)authManagerDidFail:(SFAuthenticationManager *)manager error:(NSError*)error info:(SFOAuthInfo *)info{
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -150,6 +266,7 @@ static NSString * const kOAuthRedirectURI = @"https://buddy.ap1.visual.force.com
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
    NSString *identifier = @"identifier";
+<<<<<<< HEAD
     UITableViewCell *_TableCell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     
     if(_TableCell == nil)
@@ -192,6 +309,26 @@ static NSString * const kOAuthRedirectURI = @"https://buddy.ap1.visual.force.com
 //    {
 //        [self tableView:self.tableView didSelectRowAtIndexPath:selectedCellIndexPath];
 //    }
+=======
+    _tableviewcell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    
+ 
+//    
+//    if(_tableviewcell == nil)
+//    {
+//  _tableviewcell = [[TableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+//        tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+//    }
+    NSLog(@"value is %@ AND %@",[(cellvalue*)[Temp objectAtIndex:indexPath.row] name],[(cellvalue*)[Temp objectAtIndex:indexPath.row]imagename]);
+//    _tableviewcell.text.font = [UIFont fontWithName:@"Helvetica" size:13];
+    [_tableviewcell.text setText:[(cellvalue*)[Temp objectAtIndex:indexPath.row] name]];
+//    _tableviewcell.text.textColor = [UIColor whiteColor];
+    [_tableviewcell.contentView setBackgroundColor:UIColorFromRGB(0x236FBD)];
+//    [_tableviewcell setImage:[[UIImageView alloc]initWithImage:[UIImage imageNamed:[(cellvalue*)[Temp objectAtIndex:indexPath.row] imagename]]]];
+    [_tableviewcell.image setImage:[UIImage imageNamed:[(cellvalue*)[Temp objectAtIndex:indexPath.row] imagename]]];
+  
+//    [_TableCell setBackgroundColor:[UIColor colorWithRed:35.0 green:111.0 blue:189.0 alpha:1]];
+>>>>>>> origin/master
     
     else
     {
@@ -203,6 +340,7 @@ static NSString * const kOAuthRedirectURI = @"https://buddy.ap1.visual.force.com
    
 
     
+<<<<<<< HEAD
     UIImageView *image = [[UIImageView alloc]initWithFrame:CGRectMake(3, 17.5, 35, 35)];
     image.image = [UIImage imageNamed:[Icons objectAtIndex:indexPath.row-2]];
     [_TableCell addSubview:image];
@@ -210,6 +348,9 @@ static NSString * const kOAuthRedirectURI = @"https://buddy.ap1.visual.force.com
     }
      [_TableCell setBackgroundColor:UIColorFromRGB(0x34495E)];
     return _TableCell;
+=======
+    return _tableviewcell;
+>>>>>>> origin/master
 }
 
 
@@ -217,6 +358,7 @@ static NSString * const kOAuthRedirectURI = @"https://buddy.ap1.visual.force.com
 {
     
     
+<<<<<<< HEAD
  
 //    if(indexPath.row == 1)
 //    {
@@ -232,6 +374,25 @@ static NSString * const kOAuthRedirectURI = @"https://buddy.ap1.visual.force.com
    else if(indexPath.row == 5)
     {
         [self CallWebservice:[SalesForceBussinessClass URLGeneration:@"https://ap1.salesforce.com/console?tsid=02u90000001N9gf"]];
+=======
+   BOOL value = [NSThread isMainThread];
+    
+    NSString *str = [NSThread currentThread].name;
+    if(indexPath.row == 1)
+    {
+//        https://ap1.salesforce.com/console?tsid=Notes
+        [self CallWebservice:[self URLGeneration:@"https://ap1.salesforce.com/apex/Notes"]];
+    }
+   else if(indexPath.row == 2)
+    {
+//        https://ap1.salesforce.com/console?tsid=ListEvents
+        [self CallWebservice:[self URLGeneration:@"https://ap1.salesforce.com/apex/ListEvents"]];
+        
+    }
+   else if(indexPath.row == 3)
+    {
+        [self CallWebservice:[self URLGeneration:@"https://ap1.salesforce.com/console?tsid=02u90000001N9gf"]];
+>>>>>>> origin/master
     }
     else{
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Message" message:@"Feature yet to implement" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
@@ -249,6 +410,7 @@ static NSString * const kOAuthRedirectURI = @"https://buddy.ap1.visual.force.com
 
 -(void)CallWebservice:(NSString*)url
 {
+<<<<<<< HEAD
     if(url != nil)
     {
    
@@ -264,6 +426,26 @@ static NSString * const kOAuthRedirectURI = @"https://buddy.ap1.visual.force.com
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Alert" message:@"Problem occurs while creating access token" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
     }
+=======
+    
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSError *error;
+    NSURLRequest *request =[NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+        
+        _webview.delegate =self;
+//    [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    
+    [_webview loadRequest:request];
+        
+        NSString *page = [NSString stringWithContentsOfURL:request.URL
+                                                  encoding:NSASCIIStringEncoding
+                                                     error:&error];
+        
+        NSString *html = [_webview stringByEvaluatingJavaScriptFromString:
+                          @"document.body.innerHTML"];
+    });
+>>>>>>> origin/master
    
 
 }

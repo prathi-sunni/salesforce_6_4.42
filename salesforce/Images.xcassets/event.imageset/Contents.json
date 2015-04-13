@@ -2,12 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-<<<<<<< HEAD
-      "scale" : "1x"
-=======
       "scale" : "1x",
-      "filename" : "notes.png"
->>>>>>> origin/master
+      "filename" : "event.png"
     },
     {
       "idiom" : "universal",

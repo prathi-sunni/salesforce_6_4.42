@@ -46,6 +46,7 @@
 		84ED586E1A9212B400910654 /* libSalesforceSDKCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ED584A1A9212B300910654 /* libSalesforceSDKCore.a */; };
 		84ED586F1A9212B400910654 /* libSalesforceSecurity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ED58551A9212B300910654 /* libSalesforceSecurity.a */; };
 		84ED58701A9212B400910654 /* libSmartSync.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ED58681A9212B300910654 /* libSmartSync.a */; };
+<<<<<<< HEAD
 		BC137E8F1AC3E1CD00C0F01F /* LightningTabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = BC137E8E1AC3E1CD00C0F01F /* LightningTabBar.png */; };
 		BC137E941AC3ED2800C0F01F /* iosNative.png in Resources */ = {isa = PBXBuildFile; fileRef = BC137E921AC3ED2800C0F01F /* iosNative.png */; };
 		BC137E951AC3ED2800C0F01F /* salesforce1.png in Resources */ = {isa = PBXBuildFile; fileRef = BC137E931AC3ED2800C0F01F /* salesforce1.png */; };
@@ -63,6 +64,25 @@
 		BCD1FCE61AC2CD3500357C6B /* task.png in Resources */ = {isa = PBXBuildFile; fileRef = BCD1FCDE1AC2CD3500357C6B /* task.png */; };
 		BCD1FCE71AC2CD3500357C6B /* Task_VF.png in Resources */ = {isa = PBXBuildFile; fileRef = BCD1FCDF1AC2CD3500357C6B /* Task_VF.png */; };
 		BCF1A72D1AC2B2C2000FE111 /* tabbarcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF1A72C1AC2B2C2000FE111 /* tabbarcontroller.m */; };
+=======
+		BC06B6D41AB020CA0095AC06 /* Tableviewcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC06B6D31AB020C90095AC06 /* Tableviewcell.xib */; };
+		BC06B6D71AB021CA0095AC06 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC06B6D61AB021CA0095AC06 /* TableViewCell.m */; };
+		BC07F69F1AB0654500CB163C /* salesforce.png in Resources */ = {isa = PBXBuildFile; fileRef = BC07F69E1AB0654500CB163C /* salesforce.png */; };
+		BC0BAE0F1AA86D2100A285AB /* Slider.png in Resources */ = {isa = PBXBuildFile; fileRef = BC0BAE0E1AA86D2100A285AB /* Slider.png */; };
+		BC37AEC61AAF078F00788AD8 /* notes.png in Resources */ = {isa = PBXBuildFile; fileRef = BC37AEBA1AAF078F00788AD8 /* notes.png */; };
+		BC37AEC71AAF078F00788AD8 /* event.png in Resources */ = {isa = PBXBuildFile; fileRef = BC37AEBB1AAF078F00788AD8 /* event.png */; };
+		BC37AEC81AAF078F00788AD8 /* Task.png in Resources */ = {isa = PBXBuildFile; fileRef = BC37AEBC1AAF078F00788AD8 /* Task.png */; };
+		BC37AEC91AAF078F00788AD8 /* opportunity.png in Resources */ = {isa = PBXBuildFile; fileRef = BC37AEBD1AAF078F00788AD8 /* opportunity.png */; };
+		BC37AECA1AAF078F00788AD8 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = BC37AEBE1AAF078F00788AD8 /* profile.png */; };
+		BC37AECB1AAF078F00788AD8 /* Finacials.png in Resources */ = {isa = PBXBuildFile; fileRef = BC37AEBF1AAF078F00788AD8 /* Finacials.png */; };
+		BC37AECC1AAF078F00788AD8 /* planning.png in Resources */ = {isa = PBXBuildFile; fileRef = BC37AEC01AAF078F00788AD8 /* planning.png */; };
+		BC37AECD1AAF078F00788AD8 /* operations-details.png in Resources */ = {isa = PBXBuildFile; fileRef = BC37AEC11AAF078F00788AD8 /* operations-details.png */; };
+		BC37AECE1AAF078F00788AD8 /* status.png in Resources */ = {isa = PBXBuildFile; fileRef = BC37AEC21AAF078F00788AD8 /* status.png */; };
+		BC37AECF1AAF078F00788AD8 /* recentactivity.png in Resources */ = {isa = PBXBuildFile; fileRef = BC37AEC31AAF078F00788AD8 /* recentactivity.png */; };
+		BC37AED01AAF078F00788AD8 /* service_oppurtunities.png in Resources */ = {isa = PBXBuildFile; fileRef = BC37AEC41AAF078F00788AD8 /* service_oppurtunities.png */; };
+		BC37AED11AAF078F00788AD8 /* solution_oppurtunity.png in Resources */ = {isa = PBXBuildFile; fileRef = BC37AEC51AAF078F00788AD8 /* solution_oppurtunity.png */; };
+		BC37AEDB1AAF1E0700788AD8 /* cellvalue.m in Sources */ = {isa = PBXBuildFile; fileRef = BC37AEDA1AAF1E0700788AD8 /* cellvalue.m */; };
+>>>>>>> origin/master
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -316,6 +336,7 @@
 		84ED58661A9212B300910654 /* SFSyncState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSyncState.h; sourceTree = "<group>"; };
 		84ED58671A9212B300910654 /* SFSyncTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSyncTarget.h; sourceTree = "<group>"; };
 		84ED58681A9212B300910654 /* libSmartSync.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSmartSync.a; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		BC137E8E1AC3E1CD00C0F01F /* LightningTabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LightningTabBar.png; sourceTree = "<group>"; };
 		BC137E921AC3ED2800C0F01F /* iosNative.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iosNative.png; sourceTree = "<group>"; };
 		BC137E931AC3ED2800C0F01F /* salesforce1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = salesforce1.png; sourceTree = "<group>"; };
@@ -337,6 +358,27 @@
 		BCD1FCDF1AC2CD3500357C6B /* Task_VF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Task_VF.png; sourceTree = "<group>"; };
 		BCF1A72B1AC2B2C2000FE111 /* tabbarcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tabbarcontroller.h; sourceTree = "<group>"; };
 		BCF1A72C1AC2B2C2000FE111 /* tabbarcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tabbarcontroller.m; sourceTree = "<group>"; };
+=======
+		BC06B6D31AB020C90095AC06 /* Tableviewcell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Tableviewcell.xib; sourceTree = "<group>"; };
+		BC06B6D51AB021CA0095AC06 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		BC06B6D61AB021CA0095AC06 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		BC07F69E1AB0654500CB163C /* salesforce.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = salesforce.png; sourceTree = "<group>"; };
+		BC0BAE0E1AA86D2100A285AB /* Slider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slider.png; sourceTree = "<group>"; };
+		BC37AEBA1AAF078F00788AD8 /* notes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notes.png; sourceTree = "<group>"; };
+		BC37AEBB1AAF078F00788AD8 /* event.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = event.png; sourceTree = "<group>"; };
+		BC37AEBC1AAF078F00788AD8 /* Task.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Task.png; sourceTree = "<group>"; };
+		BC37AEBD1AAF078F00788AD8 /* opportunity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = opportunity.png; sourceTree = "<group>"; };
+		BC37AEBE1AAF078F00788AD8 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		BC37AEBF1AAF078F00788AD8 /* Finacials.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Finacials.png; sourceTree = "<group>"; };
+		BC37AEC01AAF078F00788AD8 /* planning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = planning.png; sourceTree = "<group>"; };
+		BC37AEC11AAF078F00788AD8 /* operations-details.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "operations-details.png"; sourceTree = "<group>"; };
+		BC37AEC21AAF078F00788AD8 /* status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = status.png; sourceTree = "<group>"; };
+		BC37AEC31AAF078F00788AD8 /* recentactivity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recentactivity.png; sourceTree = "<group>"; };
+		BC37AEC41AAF078F00788AD8 /* service_oppurtunities.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = service_oppurtunities.png; sourceTree = "<group>"; };
+		BC37AEC51AAF078F00788AD8 /* solution_oppurtunity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = solution_oppurtunity.png; sourceTree = "<group>"; };
+		BC37AED91AAF1E0700788AD8 /* cellvalue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellvalue.h; sourceTree = "<group>"; };
+		BC37AEDA1AAF1E0700788AD8 /* cellvalue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellvalue.m; sourceTree = "<group>"; };
+>>>>>>> origin/master
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -385,6 +427,9 @@
 		84ED4BAB1A91EAA300910654 = {
 			isa = PBXGroup;
 			children = (
+				BC37AED91AAF1E0700788AD8 /* cellvalue.h */,
+				BC37AEDA1AAF1E0700788AD8 /* cellvalue.m */,
+				BC06B6D31AB020C90095AC06 /* Tableviewcell.xib */,
 				84ED57F51A9212B300910654 /* MKNetworkKit */,
 				84ED57FF1A9212B300910654 /* SalesforceNetworkSDK */,
 				84ED58071A9212B300910654 /* SalesforceOAuth */,
@@ -444,6 +489,7 @@
 				84E96EB71A946EAF007038AF /* ContactDetailViewController.m */,
 				84E96EB91A946EE8007038AF /* ContactListViewController.h */,
 				84E96EBA1A946EE8007038AF /* ContactListViewController.m */,
+<<<<<<< HEAD
 				BCD1FCD51AC2BAAE00357C6B /* SalesForceBussinessClass.h */,
 				BCD1FCD61AC2BAAE00357C6B /* SalesForceBussinessClass.m */,
 				84ED4BC41A91EAA400910654 /* Images.xcassets */,
@@ -460,6 +506,25 @@
 				BCD1FCDD1AC2CD3500357C6B /* opportunity.png */,
 				BCD1FCDE1AC2CD3500357C6B /* task.png */,
 				BCD1FCDF1AC2CD3500357C6B /* Task_VF.png */,
+=======
+				BC06B6D51AB021CA0095AC06 /* TableViewCell.h */,
+				BC06B6D61AB021CA0095AC06 /* TableViewCell.m */,
+				84ED4BC41A91EAA400910654 /* Images.xcassets */,
+				BC07F69E1AB0654500CB163C /* salesforce.png */,
+				BC37AEBA1AAF078F00788AD8 /* notes.png */,
+				BC37AEBB1AAF078F00788AD8 /* event.png */,
+				BC37AEBC1AAF078F00788AD8 /* Task.png */,
+				BC37AEBD1AAF078F00788AD8 /* opportunity.png */,
+				BC37AEBE1AAF078F00788AD8 /* profile.png */,
+				BC37AEBF1AAF078F00788AD8 /* Finacials.png */,
+				BC37AEC01AAF078F00788AD8 /* planning.png */,
+				BC37AEC11AAF078F00788AD8 /* operations-details.png */,
+				BC37AEC21AAF078F00788AD8 /* status.png */,
+				BC37AEC31AAF078F00788AD8 /* recentactivity.png */,
+				BC37AEC41AAF078F00788AD8 /* service_oppurtunities.png */,
+				BC37AEC51AAF078F00788AD8 /* solution_oppurtunity.png */,
+				BC0BAE0E1AA86D2100A285AB /* Slider.png */,
+>>>>>>> origin/master
 				84ED4BC61A91EAA400910654 /* LaunchScreen.xib */,
 				84ED4BB71A91EAA300910654 /* Supporting Files */,
 			);
@@ -1011,6 +1076,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84ED512C1A91F86800910654 /* LICENSE in Resources */,
+<<<<<<< HEAD
 				BCD1FCE01AC2CD3500357C6B /* contact.png in Resources */,
 				BC137E8F1AC3E1CD00C0F01F /* LightningTabBar.png in Resources */,
 				BCD1FCE41AC2CD3500357C6B /* Lightning.png in Resources */,
@@ -1020,17 +1086,41 @@
 				BCD1FCE21AC2CD3500357C6B /* event.png in Resources */,
 				BCD1FCE61AC2CD3500357C6B /* task.png in Resources */,
 				BC137E981AC4155400C0F01F /* ios.jpg in Resources */,
+=======
+				BC06B6D41AB020CA0095AC06 /* Tableviewcell.xib in Resources */,
+				84ED4BC31A91EAA400910654 /* Main.storyboard in Resources */,
+				BC37AED11AAF078F00788AD8 /* solution_oppurtunity.png in Resources */,
+>>>>>>> origin/master
 				84ED4BC81A91EAA400910654 /* LaunchScreen.xib in Resources */,
+				BC37AEC91AAF078F00788AD8 /* opportunity.png in Resources */,
 				84ED4BC51A91EAA400910654 /* Images.xcassets in Resources */,
 				BC137E991AC4155400C0F01F /* SF1.jpg in Resources */,
 				84ED54191A91F88600910654 /* Settings.bundle in Resources */,
+<<<<<<< HEAD
 				BCD1FCE51AC2CD3500357C6B /* opportunity.png in Resources */,
+=======
+				BC37AECC1AAF078F00788AD8 /* planning.png in Resources */,
+				BC37AED01AAF078F00788AD8 /* service_oppurtunities.png in Resources */,
+				BC37AEC61AAF078F00788AD8 /* notes.png in Resources */,
+				BC37AECF1AAF078F00788AD8 /* recentactivity.png in Resources */,
+				BC07F69F1AB0654500CB163C /* salesforce.png in Resources */,
+				BC37AEC81AAF078F00788AD8 /* Task.png in Resources */,
+				BC37AECB1AAF078F00788AD8 /* Finacials.png in Resources */,
+>>>>>>> origin/master
 				84ED51281A91F86800910654 /* openssl_license.txt in Resources */,
 				BCD1FCE71AC2CD3500357C6B /* Task_VF.png in Resources */,
 				BC137E941AC3ED2800C0F01F /* iosNative.png in Resources */,
 				84ED51291A91F86800910654 /* commit.txt in Resources */,
+<<<<<<< HEAD
 				BCD1FCE11AC2CD3500357C6B /* dashboard.png in Resources */,
+=======
+				BC0BAE0F1AA86D2100A285AB /* Slider.png in Resources */,
+				BC37AEC71AAF078F00788AD8 /* event.png in Resources */,
+>>>>>>> origin/master
 				84ED54181A91F88600910654 /* SalesforceSDKResources.bundle in Resources */,
+				BC37AECA1AAF078F00788AD8 /* profile.png in Resources */,
+				BC37AECD1AAF078F00788AD8 /* operations-details.png in Resources */,
+				BC37AECE1AAF078F00788AD8 /* status.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1048,12 +1138,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC37AEDB1AAF1E0700788AD8 /* cellvalue.m in Sources */,
 				84E96EBB1A946EE8007038AF /* ContactListViewController.m in Sources */,
 				BCF1A72D1AC2B2C2000FE111 /* tabbarcontroller.m in Sources */,
 				BCD1FCD41AC2B58C00357C6B /* SFLightingComponent.m in Sources */,
 				84ED4BC01A91EAA300910654 /* ViewController.m in Sources */,
 				BCD1FCD71AC2BAAE00357C6B /* SalesForceBussinessClass.m in Sources */,
 				84ED4BBD1A91EAA300910654 /* AppDelegate.m in Sources */,
+				BC06B6D71AB021CA0095AC06 /* TableViewCell.m in Sources */,
 				84E96EB81A946EAF007038AF /* ContactDetailViewController.m in Sources */,
 				84ED4BBA1A91EAA300910654 /* main.m in Sources */,
 				BCD1FCD11AC2B57200357C6B /* SF1ViewController.m in Sources */,
