@@ -46,7 +46,23 @@
 		84ED586E1A9212B400910654 /* libSalesforceSDKCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ED584A1A9212B300910654 /* libSalesforceSDKCore.a */; };
 		84ED586F1A9212B400910654 /* libSalesforceSecurity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ED58551A9212B300910654 /* libSalesforceSecurity.a */; };
 		84ED58701A9212B400910654 /* libSmartSync.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ED58681A9212B300910654 /* libSmartSync.a */; };
-		BC0BAE0F1AA86D2100A285AB /* Slider.png in Resources */ = {isa = PBXBuildFile; fileRef = BC0BAE0E1AA86D2100A285AB /* Slider.png */; };
+		BC137E8F1AC3E1CD00C0F01F /* LightningTabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = BC137E8E1AC3E1CD00C0F01F /* LightningTabBar.png */; };
+		BC137E941AC3ED2800C0F01F /* iosNative.png in Resources */ = {isa = PBXBuildFile; fileRef = BC137E921AC3ED2800C0F01F /* iosNative.png */; };
+		BC137E951AC3ED2800C0F01F /* salesforce1.png in Resources */ = {isa = PBXBuildFile; fileRef = BC137E931AC3ED2800C0F01F /* salesforce1.png */; };
+		BC137E981AC4155400C0F01F /* ios.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC137E961AC4155400C0F01F /* ios.jpg */; };
+		BC137E991AC4155400C0F01F /* SF1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC137E971AC4155400C0F01F /* SF1.jpg */; };
+		BCD1FCD11AC2B57200357C6B /* SF1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD1FCD01AC2B57200357C6B /* SF1ViewController.m */; };
+		BCD1FCD41AC2B58C00357C6B /* SFLightingComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD1FCD31AC2B58C00357C6B /* SFLightingComponent.m */; };
+		BCD1FCD71AC2BAAE00357C6B /* SalesForceBussinessClass.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD1FCD61AC2BAAE00357C6B /* SalesForceBussinessClass.m */; };
+		BCD1FCE01AC2CD3500357C6B /* contact.png in Resources */ = {isa = PBXBuildFile; fileRef = BCD1FCD81AC2CD3500357C6B /* contact.png */; };
+		BCD1FCE11AC2CD3500357C6B /* dashboard.png in Resources */ = {isa = PBXBuildFile; fileRef = BCD1FCD91AC2CD3500357C6B /* dashboard.png */; };
+		BCD1FCE21AC2CD3500357C6B /* event.png in Resources */ = {isa = PBXBuildFile; fileRef = BCD1FCDA1AC2CD3500357C6B /* event.png */; };
+		BCD1FCE31AC2CD3500357C6B /* feed.png in Resources */ = {isa = PBXBuildFile; fileRef = BCD1FCDB1AC2CD3500357C6B /* feed.png */; };
+		BCD1FCE41AC2CD3500357C6B /* Lightning.png in Resources */ = {isa = PBXBuildFile; fileRef = BCD1FCDC1AC2CD3500357C6B /* Lightning.png */; };
+		BCD1FCE51AC2CD3500357C6B /* opportunity.png in Resources */ = {isa = PBXBuildFile; fileRef = BCD1FCDD1AC2CD3500357C6B /* opportunity.png */; };
+		BCD1FCE61AC2CD3500357C6B /* task.png in Resources */ = {isa = PBXBuildFile; fileRef = BCD1FCDE1AC2CD3500357C6B /* task.png */; };
+		BCD1FCE71AC2CD3500357C6B /* Task_VF.png in Resources */ = {isa = PBXBuildFile; fileRef = BCD1FCDF1AC2CD3500357C6B /* Task_VF.png */; };
+		BCF1A72D1AC2B2C2000FE111 /* tabbarcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF1A72C1AC2B2C2000FE111 /* tabbarcontroller.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -300,7 +316,27 @@
 		84ED58661A9212B300910654 /* SFSyncState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSyncState.h; sourceTree = "<group>"; };
 		84ED58671A9212B300910654 /* SFSyncTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSyncTarget.h; sourceTree = "<group>"; };
 		84ED58681A9212B300910654 /* libSmartSync.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSmartSync.a; sourceTree = "<group>"; };
-		BC0BAE0E1AA86D2100A285AB /* Slider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slider.png; sourceTree = "<group>"; };
+		BC137E8E1AC3E1CD00C0F01F /* LightningTabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LightningTabBar.png; sourceTree = "<group>"; };
+		BC137E921AC3ED2800C0F01F /* iosNative.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iosNative.png; sourceTree = "<group>"; };
+		BC137E931AC3ED2800C0F01F /* salesforce1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = salesforce1.png; sourceTree = "<group>"; };
+		BC137E961AC4155400C0F01F /* ios.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ios.jpg; sourceTree = "<group>"; };
+		BC137E971AC4155400C0F01F /* SF1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SF1.jpg; sourceTree = "<group>"; };
+		BCD1FCCF1AC2B57200357C6B /* SF1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SF1ViewController.h; sourceTree = "<group>"; };
+		BCD1FCD01AC2B57200357C6B /* SF1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SF1ViewController.m; sourceTree = "<group>"; };
+		BCD1FCD21AC2B58C00357C6B /* SFLightingComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLightingComponent.h; sourceTree = "<group>"; };
+		BCD1FCD31AC2B58C00357C6B /* SFLightingComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLightingComponent.m; sourceTree = "<group>"; };
+		BCD1FCD51AC2BAAE00357C6B /* SalesForceBussinessClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalesForceBussinessClass.h; sourceTree = "<group>"; };
+		BCD1FCD61AC2BAAE00357C6B /* SalesForceBussinessClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalesForceBussinessClass.m; sourceTree = "<group>"; };
+		BCD1FCD81AC2CD3500357C6B /* contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact.png; sourceTree = "<group>"; };
+		BCD1FCD91AC2CD3500357C6B /* dashboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dashboard.png; sourceTree = "<group>"; };
+		BCD1FCDA1AC2CD3500357C6B /* event.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = event.png; sourceTree = "<group>"; };
+		BCD1FCDB1AC2CD3500357C6B /* feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feed.png; sourceTree = "<group>"; };
+		BCD1FCDC1AC2CD3500357C6B /* Lightning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lightning.png; sourceTree = "<group>"; };
+		BCD1FCDD1AC2CD3500357C6B /* opportunity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = opportunity.png; sourceTree = "<group>"; };
+		BCD1FCDE1AC2CD3500357C6B /* task.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = task.png; sourceTree = "<group>"; };
+		BCD1FCDF1AC2CD3500357C6B /* Task_VF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Task_VF.png; sourceTree = "<group>"; };
+		BCF1A72B1AC2B2C2000FE111 /* tabbarcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tabbarcontroller.h; sourceTree = "<group>"; };
+		BCF1A72C1AC2B2C2000FE111 /* tabbarcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tabbarcontroller.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -398,12 +434,32 @@
 				84ED4BBE1A91EAA300910654 /* ViewController.h */,
 				84ED4BBF1A91EAA300910654 /* ViewController.m */,
 				84ED4BC11A91EAA400910654 /* Main.storyboard */,
+				BCD1FCCF1AC2B57200357C6B /* SF1ViewController.h */,
+				BCD1FCD01AC2B57200357C6B /* SF1ViewController.m */,
+				BCD1FCD21AC2B58C00357C6B /* SFLightingComponent.h */,
+				BCD1FCD31AC2B58C00357C6B /* SFLightingComponent.m */,
+				BCF1A72B1AC2B2C2000FE111 /* tabbarcontroller.h */,
+				BCF1A72C1AC2B2C2000FE111 /* tabbarcontroller.m */,
 				84E96EB61A946EAF007038AF /* ContactDetailViewController.h */,
 				84E96EB71A946EAF007038AF /* ContactDetailViewController.m */,
 				84E96EB91A946EE8007038AF /* ContactListViewController.h */,
 				84E96EBA1A946EE8007038AF /* ContactListViewController.m */,
+				BCD1FCD51AC2BAAE00357C6B /* SalesForceBussinessClass.h */,
+				BCD1FCD61AC2BAAE00357C6B /* SalesForceBussinessClass.m */,
 				84ED4BC41A91EAA400910654 /* Images.xcassets */,
-				BC0BAE0E1AA86D2100A285AB /* Slider.png */,
+				BC137E8E1AC3E1CD00C0F01F /* LightningTabBar.png */,
+				BC137E921AC3ED2800C0F01F /* iosNative.png */,
+				BC137E931AC3ED2800C0F01F /* salesforce1.png */,
+				BC137E961AC4155400C0F01F /* ios.jpg */,
+				BC137E971AC4155400C0F01F /* SF1.jpg */,
+				BCD1FCD81AC2CD3500357C6B /* contact.png */,
+				BCD1FCD91AC2CD3500357C6B /* dashboard.png */,
+				BCD1FCDA1AC2CD3500357C6B /* event.png */,
+				BCD1FCDB1AC2CD3500357C6B /* feed.png */,
+				BCD1FCDC1AC2CD3500357C6B /* Lightning.png */,
+				BCD1FCDD1AC2CD3500357C6B /* opportunity.png */,
+				BCD1FCDE1AC2CD3500357C6B /* task.png */,
+				BCD1FCDF1AC2CD3500357C6B /* Task_VF.png */,
 				84ED4BC61A91EAA400910654 /* LaunchScreen.xib */,
 				84ED4BB71A91EAA300910654 /* Supporting Files */,
 			);
@@ -955,13 +1011,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				84ED512C1A91F86800910654 /* LICENSE in Resources */,
+				BCD1FCE01AC2CD3500357C6B /* contact.png in Resources */,
+				BC137E8F1AC3E1CD00C0F01F /* LightningTabBar.png in Resources */,
+				BCD1FCE41AC2CD3500357C6B /* Lightning.png in Resources */,
 				84ED4BC31A91EAA400910654 /* Main.storyboard in Resources */,
+				BCD1FCE31AC2CD3500357C6B /* feed.png in Resources */,
+				BC137E951AC3ED2800C0F01F /* salesforce1.png in Resources */,
+				BCD1FCE21AC2CD3500357C6B /* event.png in Resources */,
+				BCD1FCE61AC2CD3500357C6B /* task.png in Resources */,
+				BC137E981AC4155400C0F01F /* ios.jpg in Resources */,
 				84ED4BC81A91EAA400910654 /* LaunchScreen.xib in Resources */,
 				84ED4BC51A91EAA400910654 /* Images.xcassets in Resources */,
+				BC137E991AC4155400C0F01F /* SF1.jpg in Resources */,
 				84ED54191A91F88600910654 /* Settings.bundle in Resources */,
+				BCD1FCE51AC2CD3500357C6B /* opportunity.png in Resources */,
 				84ED51281A91F86800910654 /* openssl_license.txt in Resources */,
+				BCD1FCE71AC2CD3500357C6B /* Task_VF.png in Resources */,
+				BC137E941AC3ED2800C0F01F /* iosNative.png in Resources */,
 				84ED51291A91F86800910654 /* commit.txt in Resources */,
-				BC0BAE0F1AA86D2100A285AB /* Slider.png in Resources */,
+				BCD1FCE11AC2CD3500357C6B /* dashboard.png in Resources */,
 				84ED54181A91F88600910654 /* SalesforceSDKResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -981,10 +1049,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				84E96EBB1A946EE8007038AF /* ContactListViewController.m in Sources */,
+				BCF1A72D1AC2B2C2000FE111 /* tabbarcontroller.m in Sources */,
+				BCD1FCD41AC2B58C00357C6B /* SFLightingComponent.m in Sources */,
 				84ED4BC01A91EAA300910654 /* ViewController.m in Sources */,
+				BCD1FCD71AC2BAAE00357C6B /* SalesForceBussinessClass.m in Sources */,
 				84ED4BBD1A91EAA300910654 /* AppDelegate.m in Sources */,
 				84E96EB81A946EAF007038AF /* ContactDetailViewController.m in Sources */,
 				84ED4BBA1A91EAA300910654 /* main.m in Sources */,
+				BCD1FCD11AC2B57200357C6B /* SF1ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1043,8 +1115,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Altimetrik Corp (27KRJ3F74B)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Altimetrik Corp (27KRJ3F74B)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ignacio Segovia (7WD8WNMJ5L)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ignacio Segovia (7WD8WNMJ5L)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1080,7 +1152,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PROVISIONING_PROFILE = "3a05764a-089d-49d6-8070-68d0a8f1167a";
+				PROVISIONING_PROFILE = "e4a1e48e-422f-4f07-9772-c84c13906c25";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1103,8 +1175,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Altimetrik Corp (27KRJ3F74B)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Altimetrik Corp (27KRJ3F74B)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ignacio Segovia (7WD8WNMJ5L)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ignacio Segovia (7WD8WNMJ5L)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1133,7 +1205,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PROVISIONING_PROFILE = "3a05764a-089d-49d6-8070-68d0a8f1167a";
+				PROVISIONING_PROFILE = "e4a1e48e-422f-4f07-9772-c84c13906c25";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1145,7 +1217,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Altimetrik Corp (27KRJ3F74B)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ignacio Segovia (7WD8WNMJ5L)";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)/**",
 					"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/**",
@@ -1180,7 +1252,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3a05764a-089d-49d6-8070-68d0a8f1167a";
+				PROVISIONING_PROFILE = "e4a1e48e-422f-4f07-9772-c84c13906c25";
 			};
 			name = Debug;
 		};
@@ -1189,8 +1261,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Altimetrik Corp (27KRJ3F74B)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Altimetrik Corp (27KRJ3F74B)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ignacio Segovia (7WD8WNMJ5L)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ignacio Segovia (7WD8WNMJ5L)";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -1225,7 +1297,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3a05764a-089d-49d6-8070-68d0a8f1167a";
+				PROVISIONING_PROFILE = "e4a1e48e-422f-4f07-9772-c84c13906c25";
 			};
 			name = Release;
 		};

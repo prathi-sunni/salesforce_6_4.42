@@ -7,14 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <SalesforceRestAPI/SFRestAPI.h>
-#import <SalesforceOAuth/SFOAuthCoordinator.h>
-#import <SalesforceOAuth/SFOAuthCredentials.h>
-#import <SalesforceSDKCore/SFUserAccountManager.h>
-#import <SalesforceSDKCore/SFAuthenticationManager.h>
+//#import <SalesforceRestAPI/SFRestAPI.h>
+//#import <SalesforceOAuth/SFOAuthCoordinator.h>
+//#import <SalesforceOAuth/SFOAuthCredentials.h>
+//#import <SalesforceSDKCore/SFUserAccountManager.h>
+//#import <SalesforceSDKCore/SFAuthenticationManager.h>
 #import "ContactDetailViewController.h"
+#import "SalesForceBussinessClass.h"
 
-@interface ContactListViewController : UIViewController<SFAuthenticationManagerDelegate,SFRestDelegate,UIWebViewDelegate,UITableViewDataSource,UITableViewDelegate>
+@interface ContactListViewController : UIViewController<UIWebViewDelegate,UITableViewDataSource,UITableViewDelegate>
 {
     
     ContactDetailViewController *detailController;
@@ -26,9 +27,15 @@
     NSString *Backurl;
     
     NSArray *Temp;
-   
+    
+    SalesForceBussinessClass *SFBC;
+    NSString *token;
+    
     
 }
+
+@property (weak,nonatomic)NSArray *Icons;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityindicator;
 @property (weak, nonatomic) IBOutlet UITableView *_tableview;
 - (IBAction)Back:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *_Back;

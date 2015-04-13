@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <SalesforceSDKCore/SalesforceSDKManager.h>
 #import "ViewController.h"
+#import "tabbarcontroller.h"
 #import "ContactListViewController.h"
 #import <SalesforceCommonUtils/SFLogger.h>
 
@@ -121,14 +122,22 @@ static NSString * const OAuthRedirectURI        = @"https://login.salesforce.com
 //    ContactListViewController *rootVC = [[ContactListViewController alloc] initWithStyle:UITableViewStylePlain];
 //    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:rootVC];
 //    self.window.rootViewController = navVC;
+    
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
                                                              bundle: nil];
-//
-    ContactListViewController *controller = (ContactListViewController*)[mainStoryboard
-                                                   instantiateViewControllerWithIdentifier: @"ContactListViewController"];
+    
+    tabbarcontroller *controller = (tabbarcontroller*)[mainStoryboard
+                                                                         instantiateViewControllerWithIdentifier: @"tabbarcontroller"];
     
     UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:controller];
     self.window.rootViewController = navVC;
+
+//
+//    ContactListViewController *controller = (ContactListViewController*)[mainStoryboard
+//                                                   instantiateViewControllerWithIdentifier: @"ContactListViewController"];
+//    
+//    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:controller];
+//    self.window.rootViewController = navVC;
 //    [self.window makeKeyAndVisible];
 }
 
