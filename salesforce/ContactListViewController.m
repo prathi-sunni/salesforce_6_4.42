@@ -31,11 +31,16 @@ static NSString * const kOAuthRedirectURI = @"https://buddy.ap1.visual.force.com
 
 @implementation ContactListViewController
 
+<<<<<<< HEAD
+@synthesize Icons;
+=======
 @synthesize Temp;
+>>>>>>> origin/master
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationController.navigationBar.hidden = TRUE;
     
     
     [self._tableview registerNib:[UINib nibWithNibName:@"Tableviewcell"
@@ -48,6 +53,11 @@ static NSString * const kOAuthRedirectURI = @"https://buddy.ap1.visual.force.com
     Subject = [NSMutableArray array];
     Priority = [NSMutableArray array];
     Status = [NSMutableArray array];
+<<<<<<< HEAD
+    
+    Icons = [NSArray arrayWithObjects:@"dashboard.png",@"contact.png",@"event.png",@"task.png",@"feed.png",@"Lightning.png",@"opportunity.png",@"",@"",@"",@"",@"",@"",@"", nil];
+    Temp = [NSArray arrayWithObjects:@"DashBoard",@"Contact",@"Event",@"Task",@"Feed",@"Lightning",@"Opportunity",@"Accounts",@"People",@"Settings",@"Help",@"LogOut", nil];
+=======
     Temp = [NSMutableArray array];
     
     cellvalue *value1 = [[cellvalue alloc]init];
@@ -117,16 +127,21 @@ static NSString * const kOAuthRedirectURI = @"https://buddy.ap1.visual.force.com
     
     
 //    Temp = [NSArray arrayWithObjects:@"SalesForce",@"Note",@"Event",@"Task",@"Oppurtunity",@"Profile",@"Financials",@"Planning",@"Operational Detail",@"Status",@"Recent Activity",@"Service Oppurtunities",@"Solution Oppurtunities", nil];
+>>>>>>> origin/master
     
     [_Account setTitle:@"Please Wait..." forState:UIControlStateNormal];
     
-        
-    [SFUserAccountManager sharedInstance].oauthClientId = kOAuthConsumerKey;
+    SFBC = [SalesForceBussinessClass SharedInstance];
     
-    [SFUserAccountManager sharedInstance].oauthCompletionUrl = kOAuthRedirectURI;
+//         [self CallWebservice:[SalesForceBussinessClass URLGeneration:@"https://ap1.salesforce.com/console?tsid=02u90000001N9gf"]];
     
-     [SFUserAccountManager sharedInstance].scopes = [NSSet setWithObjects:@"web", @"api", nil];
-    
+<<<<<<< HEAD
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:5 inSection:0];
+    [__tableview selectRowAtIndexPath:indexPath
+                                animated:YES
+                          scrollPosition:UITableViewScrollPositionNone];
+    [self tableView:__tableview didSelectRowAtIndexPath:indexPath];
+=======
     [[SFAuthenticationManager sharedManager] addDelegate:self];
     
     [[SFAuthenticationManager sharedManager]
@@ -148,6 +163,7 @@ static NSString * const kOAuthRedirectURI = @"https://buddy.ap1.visual.force.com
          // handle error hare.
      }
      ];
+>>>>>>> origin/master
     
  
    
@@ -192,8 +208,8 @@ static NSString * const kOAuthRedirectURI = @"https://buddy.ap1.visual.force.com
 -(void)FetchtheAccountsDetails
 {
     
-    SFRestRequest *request1 = [[SFRestAPI sharedInstance] requestForQuery:@"SELECT  ActivityDate, CallType,  Id,   Priority, Status, Subject FROM Task"];
-    [[SFRestAPI sharedInstance] send:request1 delegate:self];
+//    SFRestRequest *request1 = [[SFRestAPI sharedInstance] requestForQuery:@"SELECT  ActivityDate, CallType,  Id,   Priority, Status, Subject FROM Task"];
+//    [[SFRestAPI sharedInstance] send:request1 delegate:self];
     
 }
 
@@ -244,12 +260,56 @@ static NSString * const kOAuthRedirectURI = @"https://buddy.ap1.visual.force.com
 //*--------------- TABLE VIEW DELEGATE----------------------*
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [Temp count];
+    return [Temp count]+2;
 }
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
    NSString *identifier = @"identifier";
+<<<<<<< HEAD
+    UITableViewCell *_TableCell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+    
+    if(_TableCell == nil)
+    {
+    _TableCell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+        tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+        [tableView setSeparatorColor:UIColorFromRGB(0x2A4158)];
+    }
+    
+    if(indexPath.row == 0)
+    {
+        UILabel *UserDetails = [[UILabel alloc]initWithFrame:CGRectMake(10, 2.5, 90, 35)];
+        UserDetails.font = [UIFont fontWithName:@"Helvetica-Bold" size:14];
+        UserDetails.textAlignment = NSTextAlignmentCenter;
+        UserDetails.text = @"Ajay Rao";
+        UserDetails.textColor = [UIColor whiteColor];
+        [_TableCell addSubview:UserDetails];
+        
+        UILabel *UserDetails1 = [[UILabel alloc]initWithFrame:CGRectMake(10, 37.5,125, 35)];
+        UserDetails1.font = [UIFont fontWithName:@"Helvetica-Bold" size:13];
+        UserDetails1.textAlignment = NSTextAlignmentCenter;
+        UserDetails1.text = @"ap1.Salesforce.com";
+        UserDetails1.textColor = [UIColor whiteColor];
+        [_TableCell addSubview:UserDetails1];
+        
+       
+        
+        
+    }
+    else if(indexPath.row == 1)
+    {
+         UISearchBar *search = [[UISearchBar alloc]initWithFrame:CGRectMake(0, 2.5, 140, 75)];
+        [search setSearchBarStyle:UISearchBarStyleDefault];
+        [search setPlaceholder:@"Search"];
+        [search setBarTintColor:UIColorFromRGB(0x34495E)];
+        [_TableCell addSubview:search];
+    }
+    
+//    if(indexPath.row == 4)
+//    {
+//        [self tableView:self.tableView didSelectRowAtIndexPath:selectedCellIndexPath];
+//    }
+=======
     _tableviewcell = [tableView dequeueReusableCellWithIdentifier:identifier];
     
  
@@ -268,9 +328,29 @@ static NSString * const kOAuthRedirectURI = @"https://buddy.ap1.visual.force.com
     [_tableviewcell.image setImage:[UIImage imageNamed:[(cellvalue*)[Temp objectAtIndex:indexPath.row] imagename]]];
   
 //    [_TableCell setBackgroundColor:[UIColor colorWithRed:35.0 green:111.0 blue:189.0 alpha:1]];
+>>>>>>> origin/master
     
+    else
+    {
+    UILabel *text = [[UILabel alloc]initWithFrame:CGRectMake(41, 17.5, 90, 35)];
+    text.font = [UIFont fontWithName:@"Helvetica" size:17];
+    text.textAlignment = NSTextAlignmentLeft;
+    text.text = [Temp objectAtIndex:indexPath.row-2];
+    text.textColor = [UIColor whiteColor];
+   
+
     
+<<<<<<< HEAD
+    UIImageView *image = [[UIImageView alloc]initWithFrame:CGRectMake(3, 17.5, 35, 35)];
+    image.image = [UIImage imageNamed:[Icons objectAtIndex:indexPath.row-2]];
+    [_TableCell addSubview:image];
+    [_TableCell addSubview:text];
+    }
+     [_TableCell setBackgroundColor:UIColorFromRGB(0x34495E)];
+    return _TableCell;
+=======
     return _tableviewcell;
+>>>>>>> origin/master
 }
 
 
@@ -278,6 +358,23 @@ static NSString * const kOAuthRedirectURI = @"https://buddy.ap1.visual.force.com
 {
     
     
+<<<<<<< HEAD
+ 
+//    if(indexPath.row == 1)
+//    {
+////        https://ap1.salesforce.com/console?tsid=Notes
+//        [self CallWebservice:[SalesForceBussinessClass URLGeneration:@"https://ap1.salesforce.com/apex/Notes"]];
+//    }
+    if(indexPath.row == 4)
+    {
+//        https://ap1.salesforce.com/console?tsid=ListEvents
+        [self CallWebservice:[SalesForceBussinessClass URLGeneration:@"https://ap1.salesforce.com/apex/ListEvents"]];
+        
+    }
+   else if(indexPath.row == 5)
+    {
+        [self CallWebservice:[SalesForceBussinessClass URLGeneration:@"https://ap1.salesforce.com/console?tsid=02u90000001N9gf"]];
+=======
    BOOL value = [NSThread isMainThread];
     
     NSString *str = [NSThread currentThread].name;
@@ -295,6 +392,7 @@ static NSString * const kOAuthRedirectURI = @"https://buddy.ap1.visual.force.com
    else if(indexPath.row == 3)
     {
         [self CallWebservice:[self URLGeneration:@"https://ap1.salesforce.com/console?tsid=02u90000001N9gf"]];
+>>>>>>> origin/master
     }
     else{
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Message" message:@"Feature yet to implement" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
@@ -307,18 +405,28 @@ static NSString * const kOAuthRedirectURI = @"https://buddy.ap1.visual.force.com
     return 75.0;
 }
 
--(NSString *)URLGeneration:(NSString*)requiredURL
-{
-    NSString *accesstoken = [SFAuthenticationManager sharedManager].coordinator.credentials.accessToken;
-    NSString *url = [NSString stringWithFormat:@"https://ap1.salesforce.com/secur/frontdoor.jsp?sid=%@&retURL=%@",accesstoken,requiredURL];
-    
-    return url;
-    
-}
+
 
 
 -(void)CallWebservice:(NSString*)url
 {
+<<<<<<< HEAD
+    if(url != nil)
+    {
+   
+    NSURLRequest *request =[NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+        _webview.delegate =self;
+
+    
+    [_webview loadRequest:request];
+    
+    }
+    else
+    {
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Alert" message:@"Problem occurs while creating access token" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+    }
+=======
     
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -337,6 +445,7 @@ static NSString * const kOAuthRedirectURI = @"https://buddy.ap1.visual.force.com
         NSString *html = [_webview stringByEvaluatingJavaScriptFromString:
                           @"document.body.innerHTML"];
     });
+>>>>>>> origin/master
    
 
 }
